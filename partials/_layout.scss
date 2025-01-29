@@ -1,0 +1,108 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.bg-home {
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e),
+      url('../assets/bg.svg');
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 0.9;
+  }
+}
+
+// ------------------------------
+
+// HERO ----
+
+.hero {
+  color: $white-normal;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem;
+
+  h1 {
+    text-align: center;
+    line-height: 150%;
+    max-width: 940px;
+    font-size: 3rem;
+  }
+
+  p {
+    text-align: center;
+    margin: 0.625rem 0;
+    font-size: 1.1rem;
+  }
+}
+
+.button-contact {
+  background-color: $red-normal;
+  color: $white-normal;
+  padding: 0.875rem 1.875rem;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  margin: 0.875rem 0;
+
+  &:hover {
+    animation: scaleButton 0.5s alternate infinite;
+  }
+}
+
+@keyframes scaleButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+// ------------------------------
+
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+    margin-top: -3rem;
+
+    h1 {
+      font-size: 2.125rem;
+      padding: 0 1.875rem;
+      width: 100%;
+    }
+
+    p {
+      font-size: 0.9375rem;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    margin-top: -4rem;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.875rem;
+    }
+  }
+}
