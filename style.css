@@ -167,6 +167,39 @@ i {
     font-size: 0.875rem;
   }
 }
+.about {
+  background-color: #06121e;
+  overflow: hidden;
+  color: #fff;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.875rem;
+}
+.about-content div {
+  flex: 1;
+}
+.about-content img {
+  max-width: 570px;
+}
+.about-content .about-description {
+  display: flex;
+  flex-direction: column;
+}
+.about-content .about-description h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.about-content .about-description p {
+  padding: 0.5rem 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 150%;
+}
+
 body {
   font-family: "Sora", sans-serif;
   width: 100%;
