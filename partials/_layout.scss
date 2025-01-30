@@ -127,18 +127,18 @@
 
   img {
     max-width: 570px;
-    cursor: ew-resize;
+    margin-bottom: 1rem;
   }
 
   .about-description {
     display: flex;
     flex-direction: column;
-    
+
     h2 {
       font-size: 2.5rem;
       font-weight: 700;
     }
-    
+
     p {
       padding: 0.5rem 0;
       font-size: 1.125rem;
@@ -165,4 +165,85 @@
 .services {
   background-color: $white-normal;
   color: $black-normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.375rem 0.875rem;
+}
+
+.services-content {
+  h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 0.875rem;
+  }
+
+  p {
+    line-height: 150%;
+    margin-bottom: 0.875rem;
+    text-align: center;
+    max-width: 780px;
+    font-weight: 500;
+  }
+}
+
+.haircuts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 2.75rem 2.125rem 2.75rem;
+}
+
+.haircut {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: $white-normal;
+  border-radius: 0.5rem;
+  box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.65);
+  overflow: hidden;
+  margin-top: 1rem;
+
+  img {
+    width: 100%;
+    max-width: 354px;
+    transition: transform 0.5s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+      z-index: 1;
+    }
+  }
+}
+
+.haircut-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.875rem;
+  background-color: $white-normal;
+  z-index: 99;
+
+  button {
+    background-color: $red-normal;
+    color: $white-normal;
+    border: 0;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
+    cursor: default;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .haircuts {
+    flex-direction: column;
+    
+  }
+
+  .haircut {
+    margin-top: 1rem;
+  }
 }
