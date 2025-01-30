@@ -209,6 +209,11 @@ i {
     margin-bottom: 0.5rem;
   }
 }
+.services {
+  background-color: #fff;
+  color: #232224;
+}
+
 body {
   font-family: "Sora", sans-serif;
   width: 100%;
