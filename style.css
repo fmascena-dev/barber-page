@@ -131,7 +131,7 @@ i {
   margin: 0.875rem 0;
 }
 .button-contact:hover {
-  animation: scaleButton 0.5s alternate infinite;
+  animation: scaleButton 0.5s alternate infinite ease-in-out;
 }
 
 @keyframes scaleButton {
@@ -184,6 +184,7 @@ i {
 }
 .about-content img {
   max-width: 570px;
+  cursor: ew-resize;
 }
 .about-content .about-description {
   display: flex;
@@ -203,6 +204,9 @@ i {
 @media screen and (max-width: 768px) {
   .about-content {
     flex-direction: column;
+  }
+  .about-content img {
+    margin-bottom: 0.5rem;
   }
 }
 body {

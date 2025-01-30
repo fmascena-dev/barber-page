@@ -61,7 +61,7 @@
   margin: 0.875rem 0;
 
   &:hover {
-    animation: scaleButton 0.5s alternate infinite;
+    animation: scaleButton 0.5s alternate infinite ease-in-out;
   }
 }
 
@@ -127,6 +127,7 @@
 
   img {
     max-width: 570px;
+    cursor: ew-resize;
   }
 
   .about-description {
@@ -150,5 +151,9 @@
 @media screen and (max-width: 768px) {
   .about-content {
     flex-direction: column;
+
+    img {
+      margin-bottom: 0.5rem;
+    }
   }
 }
